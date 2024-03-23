@@ -1,0 +1,53 @@
+/* Define custom animation */
+@keyframes slidein-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation class */
+  .animate-slidein-left {
+    animation: slidein-left 1s ease-out;
+  }
+
+  
+  /* Define custom animation */
+@keyframes slidein-bottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation class */
+  .animate-slidein-bottom {
+    animation: slidein-bottom 1s ease-out;
+  }
+
+
+/* Define custom animation */
+  @keyframes slidein-top {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* Apply animation class */
+  .animate-slidein-top {
+    animation: slidein-top 1s ease-out;
+  }
