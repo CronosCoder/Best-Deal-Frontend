@@ -2,76 +2,129 @@
 
 const SignUp = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign up for an account</h2>
-        </div>
-        <form className="mt-8 space-y-6">
-          <input type="hidden" name="remember" value="true" />
-          <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="firstName" className="sr-only">First Name</label>
+      <div className="flex h-screen justify-center items-center  bg-[#F2F2F6]">
+      <div className=" flex justify-center items-center w-1/2">
+      <div className=" p-8 max-w-md w-full">
+        <h2 className="text-3xl mb-4 text-center font-bold text-[#2c296d]">
+          Registration
+        </h2>
+        <form className="space-y-4">
+          <div className="flex flex-col">
+            <label htmlFor="first_name" className="text-sm mb-1 font-mono">
+            First Name
+            </label>
+            <div className="relative">
+              <img
+                className="w-[25px] absolute ml-3 mt-2 opacity-25"
+                src=''
+                alt=""
+              />
               <input
-                id="firstName"
-                name="firstName"
                 type="text"
-                autoComplete="given-name"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="First Name"
-              />
-            </div>
-            <div>
-              <label htmlFor="lastName" className="sr-only">Last Name</label>
-              <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                autoComplete="family-name"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Last Name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="sr-only">Email address</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="sr-only">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="new-password"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Password"
+                id="first_name"
+                className="w-full pl-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#2d2a6e] tracking-[2px] ease-linear hover:border-[#859A00]  transition duration-300"
+                placeholder="Enter your first name..."
+                required="required"
               />
             </div>
           </div>
 
-          <div>
-            <button
-              type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Sign Up
-            </button>
+          <div className="flex flex-col">
+            <label htmlFor="last_name" className="text-sm mb-1 font-mono">
+              Last Name
+            </label>
+            <div className="relative">
+              <img
+                className="w-[25px] absolute ml-3 mt-2 opacity-25"
+                src=''
+                alt=""
+              />
+              <input
+                type="text"
+                id="last_name"
+                className=" w-full pl-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#2d2a6e] tracking-[2px] ease-linear hover:border-[#859A00]  transition duration-300"
+                placeholder="Enter your last name..."
+                required="required"
+              />
+            </div>
           </div>
+
+          <div className="flex flex-col">
+            <label htmlFor="email" className="text-sm mb-1 font-mono">
+              Email
+            </label>
+            <div className="relative">
+              <img
+                className="w-[25px] absolute ml-3 mt-2 opacity-25"
+                src=''
+                alt=""
+              />
+              <input
+                type="email"
+                id="email"
+                className=" w-full pl-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#2d2a6e] tracking-[2px] ease-linear hover:border-[#859A00]  transition duration-300"
+                placeholder="Enter your email..."
+                required="required"
+              />
+            </div>
+          </div>
+          
+          <div className="flex flex-col">
+            <label htmlFor="password" className="text-sm mb-1 font-mono">
+              Password
+            </label>
+            <div className="relative">
+              <img
+                className="w-[25px] absolute ml-3 mt-2 opacity-25"
+                src=''
+                alt=""
+              />
+              <input
+                type="password"
+                id="password"
+                className=" w-full pl-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#2d2a6e] tracking-[2px] ease-linear hover:border-[#859A00]  transition duration-300"
+                placeholder="Enter a password..."
+                required="required"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="confirm_password" className="text-sm mb-1 font-mono">
+              Confirm Password
+            </label>
+            <div className="relative">
+              <img
+                className="w-[25px] absolute ml-3 mt-2 opacity-25"
+                src=''
+                alt=""
+              />
+              <input
+                type="password"
+                id="confirm_password"
+                className=" w-full pl-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#2d2a6e] tracking-[2px] ease-linear hover:border-[#859A00]  transition duration-300"
+                placeholder="Enter confirm password..."
+                required="required"
+              />
+            </div>
+          </div>
+
+
+          <button
+            type="submit"
+            className="bg-[#859A00] w-[100%] text-white py-2 px-4 rounded-lg hover:bg-[#6d53b4] transition duration-300"
+          >
+            Sign Up
+          </button>
         </form>
+        
+        <div className="flex justify-between mt-2">
+          <p className=''>already have an account ? <a href="">Sign in</a> </p>
+          </div>
+        
       </div>
     </div>
-    );
+    </div>
+      );
 };
 
 export default SignUp;

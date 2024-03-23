@@ -62,11 +62,16 @@ const LogIn = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#859A00] w-[100%] text-white py-2 px-4 rounded-lg hover:bg-[#2d2a6e] transition duration-300"
+              className="bg-[#859A00] w-[100%] text-white py-2 px-4 rounded-lg hover:bg-[#6d53b4] transition duration-300"
             >
               Login
             </button>
           </form>
+          <div className="flex justify-between mt-2">
+          <p className=''>have not any account ? <a href="">Sign Up</a> </p>
+          <a href="" className="text-[#7d60ce]">Forgot password?</a>
+          </div>
+          
         </div>
       </div>
     </div>
