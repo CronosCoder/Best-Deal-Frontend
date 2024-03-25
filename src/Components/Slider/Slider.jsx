@@ -14,7 +14,7 @@ const Slider = () => {
         loop: true,
         mode: "free-snap",
         slides: {
-            perView: 6,
+            perView: 7,
             spacing: 15,
         },
     });

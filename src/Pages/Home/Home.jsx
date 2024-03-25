@@ -2,6 +2,7 @@
 import Carousel from "../../Components/Carousel/Carousel";
 import NavBar from "../../Components/NavBar/NavBar";
 import Slider from "../../Components/Slider/Slider";
+import SpecialProduct from "../../Components/SpecialProduct/SpecialProduct";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <div className="m-10 overflow-hidden">
                 <Slider />
             </div>
+            <SpecialProduct/>
         </div>
     );
 };
