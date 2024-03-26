@@ -1,8 +1,10 @@
-
 import Carousel from "../../Components/Carousel/Carousel";
 import NavBar from "../../Components/NavBar/NavBar";
 import Slider from "../../Components/Slider/Slider";
 import SpecialProduct from "../../Components/SpecialProduct/SpecialProduct";
+import BestForYou from "../../Components/BestForYou/BestForYou";
+
+
 
 const Home = () => {
     return (
@@ -13,6 +15,7 @@ const Home = () => {
                 <Slider />
             </div>
             <SpecialProduct/>
+            <BestForYou/>
         </div>
     );
 };
