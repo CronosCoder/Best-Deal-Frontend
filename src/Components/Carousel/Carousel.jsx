@@ -43,7 +43,7 @@ const Carousel = () => {
     )
 
     return (
-        <div ref={sliderRef} className="h-4/5 keen-slider ">
+        <div ref={sliderRef} className="h-4/5 keen-slider mx-18">
             <div className="keen-slider__slide number-slide1 flex justify-between items-center">
                 <div className='ml-16 w-1/2'>
                     <h2 className='uppercase font-semibold text-2xl text-[#96AE00]'>Top Seller In the Week</h2>

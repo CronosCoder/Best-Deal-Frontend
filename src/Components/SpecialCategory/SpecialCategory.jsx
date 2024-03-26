@@ -11,7 +11,7 @@ const SpecialCategory = () => {
                 <NavLink to="/nested/freshvegetable" className={({ isActive }) => isActive ? "text-[#96AE00] font-semibold" : "text-[#4f4f5c] font-semibold"}>Fresh Vegetables</NavLink>
                 <NavLink to="/nested/biscuitsnack/" className={({ isActive }) => isActive ? "text-[#96AE00] font-semibold" : "text-[#4f4f5c] font-semibold"} >Biscuits Snack</NavLink>
             </div>
-            <div className="mx-12 mt-8 overflow-hidden">
+            <div className=" mt-8 overflow-hidden">
                 <Outlet />
             </div>
         </div>
