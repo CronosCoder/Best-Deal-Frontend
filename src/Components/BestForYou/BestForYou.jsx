@@ -1,6 +1,5 @@
 import Bimg from "./assets/BestForYou.png";
 const BestForYou = () => {
-    
 
     return (
         <>

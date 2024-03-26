@@ -3,6 +3,8 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Slider from "../../Components/Slider/Slider";
 import SpecialProduct from "../../Components/SpecialProduct/SpecialProduct";
 import BestForYou from "../../Components/BestForYou/BestForYou";
+import Footer from "../../Components/Footer/Footer";
+
 
 
 
@@ -16,6 +18,7 @@ const Home = () => {
             </div>
             <SpecialProduct/>
             <BestForYou/>
+            <Footer/>
         </div>
     );
 };
