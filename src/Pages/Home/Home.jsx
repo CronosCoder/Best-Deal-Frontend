@@ -2,6 +2,7 @@
 import Carousel from "../../Components/Carousel/Carousel";
 import NavBar from "../../Components/NavBar/NavBar";
 import Slider from "../../Components/Slider/Slider";
+import SpecialCategory from "../../Components/SpecialCategory/SpecialCategory";
 import SpecialProduct from "../../Components/SpecialProduct/SpecialProduct";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
                 <Slider />
             </div>
             <SpecialProduct/>
+            <SpecialCategory/>
         </div>
     );
 };
