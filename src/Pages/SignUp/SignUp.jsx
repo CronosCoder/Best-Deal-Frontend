@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const SignUp = () => {
@@ -117,8 +118,8 @@ const SignUp = () => {
           </button>
         </form>
         
-        <div className="flex justify-between mt-2">
-          <p className=''>already have an account ? <a href="">Sign in</a> </p>
+        <div className="text-center mt-2">
+              <p className=''>already have an account ? <Link className='text-blue-500' to="/login">Sign in</Link> </p>
           </div>
         
       </div>
