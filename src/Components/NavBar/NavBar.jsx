@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
-        <nav className="flex justify-between items-center py-4 bg-white drop-shadow-lg px-20">
+        <nav className="flex justify-between items-center py-4 bg-white drop-shadow-lg px-20 fixed w-full top-0 left-0 z-50 ">
             <h1 
                 className="w-[200px] flex items-center text-4xl text-[#390279] font-['Style_Script'] "
                 >
