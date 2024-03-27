@@ -8,7 +8,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa
 function Footer() {
     return (
         <>
-        <footer className="footer py-16"  style={{backgroundImage: `url(${bgImg})`}}>
+        <footer className="footer py-16 mt-16"  style={{backgroundImage: `url(${bgImg})`}}>
             <div className="flex justify-around px-16">
                 <div className="flex justify-center flex-col items-center text-white">
                     <img src={icon1} alt="icon" className="w-[20px]"/>
