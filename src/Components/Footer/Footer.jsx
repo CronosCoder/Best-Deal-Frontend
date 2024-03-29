@@ -2,6 +2,10 @@
 import "./CSS/footer.css";
 import bgImg from "./assets/footer-shape-1.svg"
 import icon1 from "./assets/icon-1.svg"
+import icon2 from "./assets/icon-2.svg"
+import icon3 from "./assets/icon-3.svg"
+import icon4 from "./assets/icon-4.svg"
+import icon5 from "./assets/icon-5.svg"
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
 
@@ -17,27 +21,27 @@ function Footer() {
                 </div>
 
                 <div className="flex justify-center flex-col items-center text-white">
-                    <img src={icon1} alt="icon" className="w-[20px]"/>
-                    <h1>FAST DELIVERY</h1>
-                    <p>All Over Bangladesh</p>
+                    <img src={icon2} alt="icon" className="w-[20px]"/>
+                    <h1>SAFE PAYMENT</h1>
+                    <p>100% Secure Payment</p>
                 </div>
 
                 <div className="flex justify-center flex-col items-center text-white">
-                    <img src={icon1} alt="icon" className="w-[20px]"/>
-                    <h1>FAST DELIVERY</h1>
-                    <p>All Over Bangladesh</p>
+                    <img src={icon3} alt="icon" className="w-[20px]"/>
+                    <h1>ONLINE DISCOUNT</h1>
+                    <p>Add Multi-buy Discount</p>
                 </div>
 
                 <div className="flex justify-center flex-col items-center text-white">
-                    <img src={icon1} alt="icon" className="w-[20px]"/>
-                    <h1>FAST DELIVERY</h1>
-                    <p>All Over Bangladesh</p>
+                    <img src={icon4} alt="icon" className="w-[20px]"/>
+                    <h1>HELP CENTER</h1>
+                    <p>Dedicated 24/7 Support</p>
                 </div>
 
                 <div className="flex justify-center flex-col items-center text-white">
-                    <img src={icon1} alt="icon" className="w-[20px]"/>
-                    <h1>FAST DELIVERY</h1>
-                    <p>All Over Bangladesh</p>
+                    <img src={icon5} alt="icon" className="w-[20px]"/>
+                    <h1>CURATED ITEMS</h1>
+                    <p>From Handpicked Sellers</p>
                 </div>
             </div>
             <hr  className="mt-10 opacity-15 mx-[100px] p-2"/><br />

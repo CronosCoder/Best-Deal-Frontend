@@ -1,24 +1,33 @@
-
+import { MdOutlineDriveFileRenameOutline, MdAlternateEmail, MdPassword } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 const SignUp = () => {
-    return (
-      <div className="flex h-screen justify-center items-center  bg-[#F2F2F6]">
-      <div className=" flex justify-center items-center w-1/2">
-      <div className=" p-8 max-w-md w-full">
-        <h2 className="text-3xl mb-4 text-center font-bold text-[#2c296d]">
-          Registration
-        </h2>
-        <form className="space-y-4">
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <div className='flex h-screen justify-center items-center bg-[#F2F2F6]'>
+      <div className={`flex justify-center items-center w-1/2 rounded-lg bg-white shadow-lg backdrop-filter backdrop-blur-lg p-8 ${isVisible ? 'opacity-100 transform translate-y-0 transition duration-500' : 'opacity-0 transform -translate-y-10'}`}>
+        <div className="mb-3 max-w-md w-full">
+          <h2 className="font-['Quicksand'] text-3xl mb-4 text-center font-bold text-[#2c296d]">
+            Registration
+          </h2>
+          <form className="space-y-4">
           <div className="flex flex-col">
             <label htmlFor="first_name" className="text-sm mb-1 font-mono">
             First Name
             </label>
             <div className="relative">
-              <img
-                className="w-[25px] absolute ml-3 mt-2 opacity-25"
-                src=''
-                alt=""
-              />
+            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
+
               <input
                 type="text"
                 id="first_name"
@@ -34,11 +43,7 @@ const SignUp = () => {
               Last Name
             </label>
             <div className="relative">
-              <img
-                className="w-[25px] absolute ml-3 mt-2 opacity-25"
-                src=''
-                alt=""
-              />
+            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
               <input
                 type="text"
                 id="last_name"
@@ -54,11 +59,7 @@ const SignUp = () => {
               Email
             </label>
             <div className="relative">
-              <img
-                className="w-[25px] absolute ml-3 mt-2 opacity-25"
-                src=''
-                alt=""
-              />
+            <MdAlternateEmail className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
               <input
                 type="email"
                 id="email"
@@ -74,11 +75,7 @@ const SignUp = () => {
               Password
             </label>
             <div className="relative">
-              <img
-                className="w-[25px] absolute ml-3 mt-2 opacity-25"
-                src=''
-                alt=""
-              />
+              <MdPassword className="w-[35px] absolute ml-3 mt-3.5 opacity-50"/>
               <input
                 type="password"
                 id="password"
@@ -93,11 +90,7 @@ const SignUp = () => {
               Confirm Password
             </label>
             <div className="relative">
-              <img
-                className="w-[25px] absolute ml-3 mt-2 opacity-25"
-                src=''
-                alt=""
-              />
+            <MdPassword className="w-[35px] absolute ml-3 mt-3.5 opacity-50"/>
               <input
                 type="password"
                 id="confirm_password"
@@ -116,15 +109,13 @@ const SignUp = () => {
             Sign Up
           </button>
         </form>
-        
-        <div className="flex justify-between mt-2">
-          <p className=''>already have an account ? <a href="">Sign in</a> </p>
+          <div className="flex justify-between mt-2">
+            <p className=''>Already have an account? <a href="#">Sign in</a></p>
           </div>
-        
+        </div>
       </div>
     </div>
-    </div>
-      );
+  );
 };
 
 export default SignUp;
