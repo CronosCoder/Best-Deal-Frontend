@@ -26,7 +26,7 @@ const SignUp = () => {
             First Name
             </label>
             <div className="relative">
-            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
+            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3 opacity-50" />
 
               <input
                 type="text"
@@ -43,7 +43,7 @@ const SignUp = () => {
               Last Name
             </label>
             <div className="relative">
-            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
+            <MdOutlineDriveFileRenameOutline className="w-[35px] absolute ml-3 mt-3 opacity-50" />
               <input
                 type="text"
                 id="last_name"
@@ -59,7 +59,7 @@ const SignUp = () => {
               Email
             </label>
             <div className="relative">
-            <MdAlternateEmail className="w-[35px] absolute ml-3 mt-3.5 opacity-50" />
+            <MdAlternateEmail className="w-[35px] absolute ml-3 mt-3 opacity-50" />
               <input
                 type="email"
                 id="email"
@@ -75,7 +75,7 @@ const SignUp = () => {
               Password
             </label>
             <div className="relative">
-              <MdPassword className="w-[35px] absolute ml-3 mt-3.5 opacity-50"/>
+              <MdPassword className="w-[35px] absolute ml-3 mt-3 opacity-50"/>
               <input
                 type="password"
                 id="password"
@@ -90,7 +90,7 @@ const SignUp = () => {
               Confirm Password
             </label>
             <div className="relative">
-            <MdPassword className="w-[35px] absolute ml-3 mt-3.5 opacity-50"/>
+            <MdPassword className="w-[35px] absolute ml-3 mt-3 opacity-50"/>
               <input
                 type="password"
                 id="confirm_password"
@@ -110,7 +110,7 @@ const SignUp = () => {
           </button>
         </form>
           <div className="flex justify-between mt-2">
-            <p className=''>Already have an account? <a href="#">Sign in</a></p>
+            <p className=''>Already have an account? <a href="#" className="text-[#6d53b4]">Sign in</a></p>
           </div>
         </div>
       </div>
