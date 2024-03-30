@@ -10,7 +10,7 @@ import LogIn from './Pages/LogIn/LogIn.jsx';
 import SignUp from './Pages/SignUp/SignUp.jsx';
 import Slider from './Components/Slider/Slider.jsx';
 import Whishlist from './Pages/Whishlist/Whishlist.jsx';
-import ProductDetails from './Components/ProductDeatils/Productdetails.jsx'
+import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -44,13 +44,14 @@ const router = createBrowserRouter([
     element: <SignUp/>,
   },
   {
-    path: "/whishlist",
+    path: "/wishlist",
     element: <Whishlist/>,
   },
   {
-    path: "/ProductDetails",
+    path: "/product/:id",
     element: <ProductDetails/>,
   },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
