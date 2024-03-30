@@ -48,6 +48,10 @@ const router = createBrowserRouter([
     element: <Whishlist/>,
   },
   {
+    path: "/cart",
+    element: <Whishlist/>,
+  },
+  {
     path: "/product/:id",
     element: <ProductDetails/>,
   },

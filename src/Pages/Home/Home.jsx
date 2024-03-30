@@ -12,9 +12,7 @@ import Footer from "../../Components/Footer/Footer";
 const Home = () => {
     return (
         <div className="bg-[#F2F2F6]">
-            <div className="sticky top-0 z-10">
-                <NavBar />
-            </div>
+            <NavBar />
             <Carousel/>
             <div className="m-10 overflow-hidden">
                 <Slider />
