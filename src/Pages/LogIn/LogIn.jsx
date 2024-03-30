@@ -1,18 +1,20 @@
 import "./css/login.css";
-import loginImage from "./assets/login.png";
+import logImg from "../../assets/login.png"
 import emailIcon from "./assets/email.png";
 import passwordIcon from "./assets/padlock.png";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   return (
-    <div className="flex h-screen bg-[#F2F2F6]">
+    <div className="px-20 flex justify-between items-center h-screen bg-[#F2F2F6]">
       {/* Left Image Section */}
       <div className="flex flex-col justify-center items-center w-1/2">
-        <div className="w-full flex justify-center">
-            <h1 className="text-[#2c296d] text-[54px] font-thin animate-slidein-left">Wellcome to BestDeal</h1>
+        <div className="w-full text-center">
+            <h1 className="text-[#2c296d] text-[54px] font-bold animate-slidein-top">Welcome to BestDeal</h1>
+          <p className="text-xl animate-slidein-top">Your personal data will be used to support your experience throughout this website, to manage access to your account.</p>
         </div>
         
-        <img src={loginImage} alt="Image" className="w-[40%] animate-slidein-bottom" />
+        <img src={logImg} alt="Image" className="w-2/3 animate-slidein-left" />
       </div>
 
       {/* Right Login Section */}
@@ -67,9 +69,8 @@ const LogIn = () => {
               Login
             </button>
           </form>
-          <div className="flex justify-between mt-2">
-          <p className=''>have not any account ? <a href="">Sign Up</a> </p>
-          <a href="" className="text-[#7d60ce]">Forgot password?</a>
+          <div className="text-center mt-2">
+            <p >have not any account ? <Link className='text-blue-500' to="/signup">Sign Up</Link> </p>
           </div>
           
         </div>
