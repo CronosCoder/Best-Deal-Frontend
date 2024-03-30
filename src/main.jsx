@@ -8,11 +8,30 @@ import {
 import Home from './Pages/Home/Home.jsx';
 import LogIn from './Pages/LogIn/LogIn.jsx';
 import SignUp from './Pages/SignUp/SignUp.jsx';
+import Slider from './Components/Slider/Slider.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    children:[
+      {
+        path: '',
+        element: <Slider/>
+      },
+      {
+        path: 'nested/freshmeat',
+        element: <Slider/>
+      },
+      {
+        path: 'nested/freshvegetable',
+        element: <Slider/>
+      },
+      {
+        path: 'nested/biscuitsnack',
+        element: <Slider/>
+      },
+    ]
   },
   {
     path: "/login",

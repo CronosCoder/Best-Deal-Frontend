@@ -3,7 +3,7 @@ const BestForYou = () => {
 
     return (
         <>
-        <div className="flex h-screen bg-[#F2F2F6] justify-between">
+        <div className="flex mb-20 bg-[#F2F2F6] justify-between items-end">
             <div className="flex justify-center items-center w-1/2">
                 <img src={Bimg} alt=""  className="w-[82%] mt-[2%] ml-[15%] hover:-translate-y-3 transition duration-300"/>
             </div>

@@ -21,7 +21,7 @@ const PdCard = () => {
                 <p className='text-xs'>Fresh Fruits</p>
                 <h2 className='text-xl font-semibold text-[#2D2A6E] line-clamp-2'>Pure Irish Organic 4 Beef Quarter</h2>
                 <PdRating className="my-3" />
-                <h2 className='text-xl font-semibold text-red-500 my-3'>$ 52.00</h2>
+                <h2 className='text-xl font-semibold text-red-500 my-3'>$ 52.00 <span className='text-gray-400 text-[15px] line-through'>$ 80.00</span> </h2>
                 <div className='flex justify-between items-center mx-2'>
                     <a className="bg-[#F5F2FF] hover:bg-[#96AE00] hover:text-white transition-all duration-200 p-3 rounded-full font-thin border border-white" href=""><IoMdHeartEmpty size={20} /></a>
                     <a className="bg-[#FFF3EC] hover:bg-[#96AE00] hover:text-white transition-all duration-200 p-3 rounded-full font-thin border border-white" href=""><PiEyeThin size={20} /></a>
