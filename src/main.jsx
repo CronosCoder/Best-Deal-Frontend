@@ -10,6 +10,7 @@ import LogIn from './Pages/LogIn/LogIn.jsx';
 import SignUp from './Pages/SignUp/SignUp.jsx';
 import Slider from './Components/Slider/Slider.jsx';
 import Whishlist from './Pages/Whishlist/Whishlist.jsx';
+import ProductDetails from './Components/ProductDeatils/Productdetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/whishlist",
     element: <Whishlist/>,
+  },
+  {
+    path: "/ProductDetails",
+    element: <ProductDetails/>,
   },
 ]);
 

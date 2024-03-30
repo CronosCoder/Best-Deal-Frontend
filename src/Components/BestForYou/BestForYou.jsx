@@ -16,7 +16,7 @@ const BestForYou = () => {
                 
                 <div className="container flex justify-between">
                     <div className="flex flex-col ">
-                        <h1 className="border-b border-dotted border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium">FRESH FRUITS:</h1>
+                        <h1 className="border-b border-dashed border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium">FRESH FRUITS:</h1>
                         <h2 className="mt-4 text-[20px] text-[#2D2A6E]">Apples, Berries & Cherries</h2>
                         <h1 className="border-b border-dotted border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium text-[#2D2A6E]">EXPIRY DATE:</h1>
                         <h2 className="mt-3 mb-3 text-[20px] text-[#2D2A6E]">See on The Bottle Cap</h2>
@@ -24,7 +24,7 @@ const BestForYou = () => {
 
                     </div>
                     <div className="flex flex-col justify-start mr-[25%]">
-                        <h1 className="border-b border-dotted border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium text-[#2D2A6E]">INGREDIENT:</h1>
+                        <h1 className="border-b border-dashed border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium text-[#2D2A6E]">INGREDIENT:</h1>
                         <h2 className="mt-4 text-[20px] text-[#2D2A6E]">Apples, Berries & Cherries</h2>
                         <h1 className="border-b border-dotted border-blue-500  border-bold mt-4 py-2 text-[20px] font-medium text-[#2D2A6E]">BOOTLE SIZE:</h1>
                         <h2 className="mt-3 mb-3 text-[20px] text-[#2D2A6E]">500ml – 1000ml</h2>
