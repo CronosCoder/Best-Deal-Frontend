@@ -211,7 +211,7 @@ const ProductComponent = () => {
                 <PdRating/>
 
                 <textarea className="border-[1px] w-full mt-3 outline-none p-3" name="review" id="" cols="30" rows="30"></textarea>
-                <button className="border-[1px] bg-[#96AE00] px-10 py-4 rounded-full text-white font-medium">SUBMIT</button>
+                <button className="border-[1px] bg-[#96AE00] px-11 py-3 rounded-full text-white font-medium hover:bg-[#2D2A6E] duration-300">SUBMIT</button>
                 
               </div>
             )}
