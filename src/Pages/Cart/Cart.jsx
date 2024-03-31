@@ -6,7 +6,8 @@ const Cart = () => {
     return (
         <>
             <NavBar/>
-            <div className="mt-24">
+            <div className="mt-20">
+                <div className="py-8 bg-[#96AE00] bg-opacity-90"><h1 className="text-center text-2xl text-white">Cart Details</h1></div>
                 <CartTable/>
                 <div className="flex justify-end w-[80%] mx-auto">
                     <div className="mt-8 w-96">
