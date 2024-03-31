@@ -7,8 +7,15 @@ import { useState } from 'react';
 import PdRating from "../../Components/PdRating/PdRating.jsx";
 import NavBar from '../../Components/NavBar/NavBar.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
+import ProductDescriptions from '../../Components/ProductDescriptions/ProductDescriptions.jsx';
+
+
+
 
 const ProductDetails = () => {
+
+    
+
     const [count, setCount] = useState(1);
 
     const handleIncrement = () => {
@@ -48,8 +55,12 @@ const ProductDetails = () => {
                     <hr />
                     <div className="product flex">
 
-                        <div className="image">
+                        <div  className="image w-[100%]">
+
+                            
                             <img src={PdImage} alt="" className="w-4/5" />
+
+
                         </div>
 
                         <div className="text p-10 mt-[8%] ">
@@ -94,6 +105,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+            <ProductDescriptions/>
 
             <Footer />
         </div>
