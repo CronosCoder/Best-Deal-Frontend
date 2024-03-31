@@ -203,14 +203,14 @@ const ProductComponent = () => {
 
                 <h1 className="text-xl mt-3 mb-2">Add a review</h1>
                 <form action="" className="mb-2 p-2 flex items-center justify-between gap-x-[15px]">
-                    <input className="border-[1px] border-[#96AE00] py-3 px-8 rounded-full w-1/2" type="text" placeholder="NAME" required/>
-                    <input className="border-[1px] border-[#96AE00]  py-3 px-8 rounded-full w-1/2" type="email" placeholder="EMAIL" required/>
+                    <input className="border-[1px] border-[#96AE00] py-3 px-8 rounded-full w-1/2 outline-none" type="text" placeholder="NAME" required/>
+                    <input className="border-[1px] border-[#96AE00]  py-3 px-8 rounded-full w-1/2 outline-none" type="email" placeholder="EMAIL" required/>
                 </form>
 
                 <h1 className="text-xl mt-1 mb-1">Your Rating</h1>
                 <PdRating/>
 
-                <textarea className="border-[1px] w-full mt-3 mb-3" name="review" id="" cols="30" rows="30"></textarea>
+                <textarea className="border-[1px] w-full mt-3 outline-none p-3" name="review" id="" cols="30" rows="30"></textarea>
                 <button className="border-[1px] bg-[#96AE00] px-10 py-4 rounded-full text-white font-medium">SUBMIT</button>
                 
               </div>
