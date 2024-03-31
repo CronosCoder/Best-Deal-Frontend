@@ -1,8 +1,10 @@
 import Footer from "../../Components/Footer/Footer";
 import NavBar from "../../Components/NavBar/NavBar";
 import CartTable from "../../Components/Table/Cart/CartTable";
+import {useNavigate} from 'react-router';
 
 const Cart = () => {
+    const navigate = useNavigate();
     return (
         <>
             <NavBar/>
@@ -20,7 +22,7 @@ const Cart = () => {
                             <h3 className="text-xm text-gray-500">Total</h3>
                             <h3 className="text-xm text-gray-500">$ 130</h3>
                         </article>
-                        <button className="uppercase font-semibold text-white text-center bg-[#96AE00] hover:bg-[#2D2A6E]  py-4 duration-300 px-8 rounded-full">Proceed to Checkout</button>
+                        <button onClick={()=>navigate("/checkout")} className="uppercase font-semibold text-white text-center bg-[#96AE00] hover:bg-[#2D2A6E]  py-4 duration-300 px-8 rounded-full">Proceed to Checkout</button>
                     </div>
                 </div>
             </div>

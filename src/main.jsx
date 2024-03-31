@@ -12,6 +12,7 @@ import Slider from './Components/Slider/Slider.jsx';
 import Whishlist from './Pages/Whishlist/Whishlist.jsx';
 import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx';
 import Cart from './Pages/Cart/Cart.jsx';
+import Checkout from './Pages/Checkout/Checkout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart/>,
+  },
+  {
+    path: "/checkout",
+    element: <Checkout/>,
   },
   {
     path: "/product/:id",
