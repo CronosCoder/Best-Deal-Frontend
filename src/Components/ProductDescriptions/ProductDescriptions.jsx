@@ -14,7 +14,7 @@ const ProductComponent = () => {
     setTimeout(() => {
         setActiveTab(tab);
         setContentVisible(true);
-      }, 500);
+      }, 300);
   
   };
 
