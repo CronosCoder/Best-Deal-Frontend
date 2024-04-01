@@ -25,21 +25,35 @@ const Checkout = () => {
                                 <input className="border p-2 rounded-md" type="text" name="" placeholder="Customer Name" id="" />
                                 <input className="border p-2 rounded-md" type="number" name="" placeholder="Phone Number" id="" />
                                 <input className="border p-2 rounded-md" type="email" name="" placeholder="Email" id="" />
-                                <textarea placeholder="Shipping Address" className="resize-y p-3 border rounded-md col-span-3 " />
-                            </div>
-                        </div>
-                        <div className="mt-5 bg-white border rounded-lg p-4">
-                            <h1 className="text-xl">Payment Details</h1>
-                            <div className="my-3 grid grid-cols-3 grid-flow-row gap-4 ">
-                                <input className="border p-2 rounded-md" type="text" name="" placeholder="Customer Name" id="" />
-                                <input className="border p-2 rounded-md" type="number" name="" placeholder="Phone Number" id="" />
-                                <input className="border p-2 rounded-md" type="email" name="" placeholder="Email" id="" />
-                                <textarea placeholder="Shipping Address" className="resize-y p-3 border rounded-md col-span-3 " />
+                                <textarea rows={5} placeholder="Shipping Address" className="resize-y p-3 border rounded-md col-span-3 " />
                             </div>
                         </div>
                     </div>
                     <div>
-
+                        <div className="bg-white border p-3 rounded-lg">
+                            <h1>Price Details</h1>
+                            <div className="flex justify-between items-center mt-3">
+                                <p className="text-sm text-gray-500">Sub Total Price</p>
+                                <p className="text-left text-sm">USD 130</p>
+                            </div>
+                            <div className="flex justify-between items-center mt-2">
+                                <p className="text-sm text-gray-500">Delivery Fee</p>
+                                <p className="text-left text-sm">USD 10</p>
+                            </div>
+                            <div className="flex justify-between items-center mt-2">
+                                <p className="text-sm text-gray-500">VAT</p>
+                                <p className="text-left text-sm">USD 15</p>
+                            </div>
+                            <div className="flex justify-between items-center mt-2">
+                                <p className="text-sm text-gray-500">Duration</p>
+                                <p className="text-left text-sm">3 Days</p>
+                            </div>
+                            <hr className="my-3" />
+                            <div className="flex justify-between items-center mt-2">
+                                <p className="text-xm font-medium ">Total</p>
+                                <p className="text-left text-xm font-medium">USD 150</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
