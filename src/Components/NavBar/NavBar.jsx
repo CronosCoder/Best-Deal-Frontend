@@ -17,7 +17,7 @@ const NavBar = () => {
             </Link>
             <div className="flex justify-between items-center w-1/4">
                 <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">Categories</a>
-                <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">Products</a>
+                <Link to={"/products"} className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">Products</Link>
                 <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">About Us</a>
             </div>
             <div className="flex items-center justify-between w-[180px]">

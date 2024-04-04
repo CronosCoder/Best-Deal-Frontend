@@ -13,6 +13,7 @@ import Whishlist from './Pages/Whishlist/Whishlist.jsx';
 import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx';
 import Cart from './Pages/Cart/Cart.jsx';
 import Checkout from './Pages/Checkout/Checkout.jsx';
+import Products from './Pages/Products/Products.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/checkout",
     element: <Checkout/>,
+  },
+  {
+    path: "/products",
+    element: <Products/>,
   },
   {
     path: "/product/:id",
