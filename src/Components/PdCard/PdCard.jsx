@@ -8,10 +8,10 @@ import sampleProdImg from '../../assets/product/products1-min.jpg';
 const PdCard = () => {
     return (
         <div className="keen-slider__slide bg-white w-[200px] rounded-md border border-white relative">
-            <div className='absolute bg-cyan-400 p-2  z-50'>
+            <div className='absolute bg-cyan-400 rounded-md p-2  z-40'>
                 <h2 className='text-white text-xs'>-40%</h2>
             </div>
-            <div className='absolute bg-orange-400 p-2  z-40 right-0 top-0'>
+            <div className='absolute bg-orange-400 rounded-md p-2  z-40 right-0 top-0'>
                 <h2 className='text-white text-xs'>HOT</h2>
             </div>
             <div className='overflow-hidden mt-3'>

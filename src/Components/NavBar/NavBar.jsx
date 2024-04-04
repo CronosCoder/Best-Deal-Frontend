@@ -18,7 +18,7 @@ const NavBar = () => {
             <div className="flex justify-between items-center w-1/4">
                 <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">Categories</a>
                 <Link to={"/products"} className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">Products</Link>
-                <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">About Us</a>
+                <Link to={"/about-us"} className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">About Us</Link>
             </div>
             <div className="flex items-center justify-between w-[180px]">
                 <NavLink to="/wishlist" className={({ isActive }) => isActive ? "bg-[#b8a3ff] p-3 rounded-full font-thin" : "bg-[#F5F2FF] p-3 rounded-full font-thin"} href=""><IoMdHeartEmpty size={25} /></NavLink>
