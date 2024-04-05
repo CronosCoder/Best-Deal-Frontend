@@ -19,7 +19,7 @@ const PdCard = () => {
                 <img src={sampleProdImg} className='hover:scale-125 transition-all duration-300' alt="this is a image" />
             </div>
             <div className='bg-[#F7F7F9] p-3 rounded-lg'>
-                <Link className='hover:underline'><p className='text-xs'>Fresh Fruits</p></Link>
+                <Link to={"/products"} className='hover:underline'><p className='text-xs'>Fresh Fruits</p></Link>
                 <Link to={"/product/1"} className='hover:underline'><h2 className='text-xl font-semibold text-[#2D2A6E] line-clamp-2'>Pure Irish Organic 4 Beef Quarter</h2></Link>
                 <PdRating className="my-3" />
                 <h2 className='text-xl font-semibold text-red-500 my-3'>$ 52.00 <span className='text-gray-400 text-[15px] line-through'>$ 80.00</span> </h2>

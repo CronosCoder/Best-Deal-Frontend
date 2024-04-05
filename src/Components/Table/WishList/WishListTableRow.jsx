@@ -31,10 +31,10 @@ const WishListTableRow = () => {
             <td className='text-2xl border text-[#2D2A6E]' >$ 130</td>
 
             <td className='border'>
-                <button className='p-3 bg-green-200  rounded-md'><FaCartPlus size={20} color='#2D2A6E' /></button>
+                <button className='p-3 bg-green-200 hover:bg-green-500  rounded-md'><FaCartPlus size={20} color='#2D2A6E' /></button>
             </td>
             <td className='border'>
-                <button className='p-3  bg-red-200 rounded-md'><RiDeleteBin3Fill size={20} color='#2D2A6E' /></button>
+                <button className='p-3  bg-red-200 hover:bg-red-500 rounded-md'><RiDeleteBin3Fill size={20} color='#2D2A6E' /></button>
             </td>
         </tr>
     );

@@ -21,15 +21,15 @@ const NavBar = () => {
                     <div
                         className="invisible absolute z-50 flex w-32 flex-col bg-gray-100 text-gray-800 shadow-xl group-hover:visible duration-500 rounded-md p-3">
 
-                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                        <Link to={"/products"} className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black hover:underline md:mx-2">
                             Vegetables
                         </Link>
 
-                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                        <Link to={"/products"} className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black hover:underline md:mx-2">
                             Fresh Fruits
                         </Link>
 
-                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                        <Link to={"/products"} className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black hover:underline md:mx-2">
                             Fresh Drinks
                         </Link>
                     </div>
