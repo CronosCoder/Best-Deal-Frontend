@@ -16,7 +16,24 @@ const NavBar = () => {
                 </h1>
             </Link>
             <div className="flex justify-between items-center w-1/4">
-                <a className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold" href="">Categories</a>
+                <div className="group relative cursor-pointer py-2 ">
+                    <h1 className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">Categories</h1>
+                    <div
+                        className="invisible absolute z-50 flex w-32 flex-col bg-gray-100 text-gray-800 shadow-xl group-hover:visible duration-500 rounded-md p-3">
+
+                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                            Vegetables
+                        </Link>
+
+                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                            Fresh Fruits
+                        </Link>
+
+                        <Link className="block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-black md:mx-2">
+                            Fresh Drinks
+                        </Link>
+                    </div>
+                </div>
                 <Link to={"/products"} className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">Products</Link>
                 <Link to={"/about-us"} className="text-[#390279] hover:text-[#96AE00] hover:underline font-semibold">About Us</Link>
             </div>
