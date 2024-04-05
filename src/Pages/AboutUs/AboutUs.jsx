@@ -5,7 +5,16 @@ import about1 from "./assets/about-svg1.svg";
 import about2 from "./assets/about-svg2.svg";
 import about3 from "./assets/about-svg3.svg";
 
+import ab1 from "./assets/about-1.png";
+import ab2 from "./assets/about-2.png";
+import ab3 from "./assets/about-3.png";
+ 
+
 import { FaRegHandPointRight } from "react-icons/fa6";
+
+
+
+
 
 const AboutUs = () => {
     return (
@@ -59,29 +68,76 @@ const AboutUs = () => {
             </div>
 
 
-            <div className="p-3 flex justify-around items-center mt-[10%]">
+            <div className="p-3 flex justify-around items-center mt-[8%] h-[50vh]">
                         {/*Another section*/}
                         <div className="flex flex-col items-center justify-center">
-                            <img src={about1} alt="" className="mb-4"/>
+                            <img src={about1} alt="" className="mb-4 hover:animate-bounce duration-300"/>
                             <h1>Select Your Products</h1>
                             <p>Choose from select produce to start. </p>
                             <p>Keep, add, or remove items.</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center">
-                            <img src={about2} alt="" className="mb-4"/>
+                            <img src={about2} alt="" className="mb-4 hover:animate-bounce duration-300"/>
                             <h1>Our Shop Best Deal</h1>
                             <p>We provide 100+ products, provide </p>
                             <p>enough nutrition for your family..</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center">
-                            <img src={about3} alt="" className="mb-4"/>
+                            <img src={about3} alt="" className="mb-4 hover:animate-bounce duration-300"/>
                             <h1>Delivery To Your</h1>
                             <p>Delivery to your door. Up to 100km</p>
                             <p>and it is completely free.</p>
                         </div>
+
+                        
+
                     </div>
+
+                    <div className="WhyChooseUs">
+                            {/*Why Choose Us */}
+                            <h1 className="font-['schoolbell'] text-[22px] mt-[5%] text-[#96AE00] text-center">Why Choose Us</h1>
+                            <h1 className="text-center text-[34px] text-[#2D2A6E] font-['Quicksand'] font-extrabold">Our Amazing Work</h1>
+                            <p className="text-center text-[#2D2A6E] text-[18px] mt-3">The liber tempor cum soluta nobis eleifend option congue doming quod mazim.</p>
+
+                            <div className="images p-11 mt-[6%] flex justify-evenly gap-x-6 items-center">
+                                <div className="one w-[50%]">
+                                    <img src={ab1} alt="" className=""/>
+                                </div>
+                                <div className="two w-[50%]">
+                                    <img src={ab2} alt="" className=""/>
+                                </div>
+                                <div className="three w-[50%]">
+                                    <img src={ab3} alt="" className=""/>
+                                </div>
+                                
+                            </div>
+
+                            <div className="text p-11 mt-[2%] flex justify-evenly gap-x-6 items-center">
+                                <div className="one w-[50%]">
+                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">Who We Are</h1>
+                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit, sed do eiusmod tempor labore
+                                    et dolore dignissimos cumque.</p>
+                                </div>
+                                <div className="two w-[50%]">
+                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">How We Work</h1>
+                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit, sed do eiusmod tempor labore
+                                    et dolore dignissimos cumque.</p>
+                                </div>
+                                <div className="three w-[50%]">
+                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">Our Products</h1>
+                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit, sed do eiusmod tempor labore
+                                    et dolore dignissimos cumque.</p>
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    
 
         </>
     );
