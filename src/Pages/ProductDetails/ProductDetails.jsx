@@ -9,13 +9,7 @@ import NavBar from '../../Components/NavBar/NavBar.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
 import ProductDescriptions from '../../Components/ProductDescriptions/ProductDescriptions.jsx';
 
-
-
-
 const ProductDetails = () => {
-
-    
-
     const [count, setCount] = useState(1);
 
     const handleIncrement = () => {
@@ -26,11 +20,10 @@ const ProductDetails = () => {
             setCount(count - 1);
         }
     };
-
+    
     return (
         <div className='bg-[#F2F2F6]'>
             <NavBar />
-
             <div className="pt-28 mx-[100px] flex justify-center items-start">
                 {/* Main Container */}
                 <div className="py-10 px-8 rounded-xl ml-[2%] bg-[#FFFFFF]">
@@ -42,27 +35,19 @@ const ProductDetails = () => {
                         <h1>
                             Brands: <span className="text-[#96AE21]">ORFARM</span>
                         </h1>
-
                         <div className="reviews flex gap-y-2">
                             <span>
                                 <PdRating />
                             </span>
                             <h1>02 REVIEWS</h1>
                         </div>
-
                         <h1>SKU: <span className="text-[#96AE21]">ORFARMVE005</span></h1>
                     </div>
                     <hr />
                     <div className="product flex">
-
                         <div  className="image w-[100%]">
-
-                            
                             <img src={PdImage} alt="" className="w-4/5" />
-
-
                         </div>
-
                         <div className="text p-10 mt-[8%] ">
                             <h1 className="text-[34px] text-[#EA0D42] font-medium">$56.00</h1>
                             <ul className="list-disc mt-5 text-[18px] mb-4">
@@ -82,7 +67,6 @@ const ProductDetails = () => {
                             <button className="w-[100%] mt-5 px-12 py-6 bg-[#859A00] rounded-[40px] text-white">ADD TO CART</button>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="border border-[#F48C8D] p-8 rounded-xl opacity-70 ml-5 w-72">
@@ -106,7 +90,6 @@ const ProductDetails = () => {
                 </div>
             </div>
             <ProductDescriptions/>
-
             <Footer />
         </div>
     );
