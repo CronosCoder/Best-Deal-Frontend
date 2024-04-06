@@ -1,20 +1,14 @@
 import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
+import Developers from "../../Components/Developers/Developers";
+import WhatMakesUsDifferent from "../../Components/WhatMakesUsDifferent/WhatMakesUsDifferent.jsx";
+import WhyChooseUs from "../../Components/WhyChooseUs/WhyChooseUs.jsx";
 import "./css/about-us.css";
 import bgOne from "./assets/bg3.png";
 import about1 from "./assets/about-svg1.svg";
 import about2 from "./assets/about-svg2.svg";
 import about3 from "./assets/about-svg3.svg";
 
-import ab1 from "./assets/about-1.png";
-import ab2 from "./assets/about-2.png";
-import ab3 from "./assets/about-3.png";
-
-
-import choose1 from './assets/choose-icon1.svg';
-import choose2 from './assets/choose-icon2.svg';
-import choose3 from './assets/choose-icon3.svg';
-import choose4 from './assets/choose-icon4.svg';
- 
 
 import { FaRegHandPointRight } from "react-icons/fa6";
 
@@ -101,81 +95,10 @@ const AboutUs = () => {
 
                     </div>
 
-                    <div className="WhyChooseUs">
-                            {/*Why Choose Us */}
-                            <h1 className="font-['schoolbell'] text-[22px] mt-[5%] text-[#96AE00] text-center">~ Why Choose Us ~</h1>
-                            <h1 className="text-center text-[34px] text-[#2D2A6E] font-['Quicksand'] font-extrabold">Our Amazing Work</h1>
-                            <p className="text-center text-[#2D2A6E] text-[18px] mt-3">The liber tempor cum soluta nobis eleifend option congue doming quod mazim.</p>
-
-                            <div className="images p-11 mt-[6%] flex justify-evenly gap-x-6 items-center">
-                                <div className="one w-[50%]">
-                                    <img src={ab1} alt="" className=""/>
-                                </div>
-                                <div className="two w-[50%]">
-                                    <img src={ab2} alt="" className=""/>
-                                </div>
-                                <div className="three w-[50%]">
-                                    <img src={ab3} alt="" className=""/>
-                                </div>
-                                
-                            </div>
-
-                            <div className="text p-11 mt-[2%] flex justify-evenly gap-x-6 items-center">
-                                <div className="one w-[50%]">
-                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">Who We Are</h1>
-                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit, sed do eiusmod tempor labore
-                                    et dolore dignissimos cumque.</p>
-                                </div>
-                                <div className="two w-[50%]">
-                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">How We Work</h1>
-                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit, sed do eiusmod tempor labore
-                                    et dolore dignissimos cumque.</p>
-                                </div>
-                                <div className="three w-[50%]">
-                                    <h1 className="text-center text-[#2D2A6E] font-bold text-xl mb-2">Our Products</h1>
-                                    <p className="text-center text-[#2D2A6E]">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit, sed do eiusmod tempor labore
-                                    et dolore dignissimos cumque.</p>
-                                </div>
-                                
-                            </div>
-                    </div>
-
-                    <div className="WhatMakesUsDifferent bg-[#F2F2F6] p-3">
-                        {/* Main Container */}
-                        <h1 className="font-['schoolbell'] text-[22px] mt-[5%] text-[#96AE00] text-center">~ Why Choose Us ~</h1>
-                        <h1 className="text-[34px] text-[#2D2A6E] font-['Quicksand'] font-bold mb-2 text-center">What makes us different</h1>
-                        <p className="text-[#2D2A6E] text-center">The liber tempor cum soluta nobis eleifend option congue doming quod mazim.</p>
-
-                        <div className="icons flex px-7 gap-9 justify-around items-center mt-[5%]">
-                            <div className="p-10 bg-white rounded-lg items-center flex flex-col justify-center">
-                                <img src={choose1} alt="" className="mb-3"/>
-                                <h1 className="text-[#2D2A6E] font-semibold">100% Fresh Food</h1>
-                                <p className="text-center mb-3">Adjust global theme options and see design changes in real-time.</p>
-                                <a href="" className="text-[#96AE00] font-medium uppercase">Learn more</a>
-                            </div>
-                            <div className="p-10 bg-white rounded-lg items-center flex flex-col justify-center">
-                                <img src={choose2} alt="" className="mb-3" />
-                                <h1 className="text-[#2D2A6E] font-semibold">Premium Quality</h1>
-                                <p className="text-center mb-3">Adjust global theme options and see design changes in real-time.</p>
-                                <a href="" className="text-[#96AE00] font-medium uppercase">Learn more</a>
-                            </div>
-                            <div className="p-10 bg-white rounded-lg items-center flex flex-col justify-center">
-                                <img src={choose3} alt="" className="mb-3" />
-                                <h1 className="text-[#2D2A6E] font-semibold">100% Natural</h1>
-                                <p className="text-center mb-3">Adjust global theme options and see design changes in real-time.</p>
-                                <a href="" className="text-[#96AE00] font-medium uppercase">Learn more</a>
-                            </div>
-                            <div className="p-10 bg-white rounded-lg items-center flex flex-col justify-center">
-                                <img src={choose4} alt="" className="mb-3" />
-                                <h1 className="text-[#2D2A6E] font-semibold">100% Organic Goods</h1>
-                                <p className="text-center mb-3">Adjust global theme options and see design changes in real-time.</p>
-                                <a href="" className="text-[#96AE00] font-medium uppercase">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
+                    <WhyChooseUs/>
+                    <WhatMakesUsDifferent/>
+                    <Developers/>
+                    <Footer/>
 
                     
 
